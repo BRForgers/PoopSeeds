@@ -1,0 +1,7 @@
+name: PoopSeeds
+version: @version@
+main: br.com.brforgers.armelin.plugins.poopseeds.PoopSeeds
+prefix: PoopSeeds
+authors: [Armelin]
+description: Make sheep shit seeds
+website: https://github.com/BRForgers/
