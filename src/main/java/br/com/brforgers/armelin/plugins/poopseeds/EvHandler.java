@@ -11,7 +11,7 @@ import java.util.Random;
 
 public class EvHandler implements Listener {
 
-    ItemStack[] stacks = new ItemStack[]{new ItemStack(Material.SEEDS,1), new ItemStack(Material.BEETROOT_SEEDS,1), new ItemStack(Material.MELON_SEEDS,1), new ItemStack(Material.PUMPKIN_SEEDS,1), new ItemStack(Material.COCOA, 1,(short) 3)};
+    ItemStack[] stacks = new ItemStack[]{new ItemStack(Material.SEEDS,1), new ItemStack(Material.BEETROOT_SEEDS,1), new ItemStack(Material.MELON_SEEDS,1), new ItemStack(Material.PUMPKIN_SEEDS,1), new ItemStack(Material.INK_SACK, 1,(short) 3)};
     //Material[] seeds = new Material[]{Material.SEEDS, Material.BEETROOT_SEEDS, Material.MELON_SEEDS, Material.PUMPKIN_SEEDS, Material.COCOA};
     Random r = new Random();
 
