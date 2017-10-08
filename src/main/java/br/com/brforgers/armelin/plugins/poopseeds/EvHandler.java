@@ -11,7 +11,8 @@ import java.util.Random;
 
 public class EvHandler implements Listener {
 
-    Material[] seeds = new Material[]{Material.SEEDS, Material.BEETROOT_SEEDS, Material.MELON_SEEDS, Material.PUMPKIN_SEEDS, Material.COCOA};
+    ItemStack[] stacks = new ItemStack[]{new ItemStack(Material.SEEDS,1), new ItemStack(Material.BEETROOT_SEEDS,1), new ItemStack(Material.MELON_SEEDS,1), new ItemStack(Material.PUMPKIN_SEEDS,1), new ItemStack(Material.COCOA, 1,(short) 3)};
+    //Material[] seeds = new Material[]{Material.SEEDS, Material.BEETROOT_SEEDS, Material.MELON_SEEDS, Material.PUMPKIN_SEEDS, Material.COCOA};
     Random r = new Random();
 
 
@@ -19,7 +20,7 @@ public class EvHandler implements Listener {
     public void onSheepRegrowWool(SheepRegrowWoolEvent event) {
         Sheep sheep = event.getEntity();
         if(r.nextInt(100) < PoopSeeds.plugin.getConfig().getInt("PoopChance")){
-            sheep.getWorld().dropItemNaturally(sheep.getLocation(), new ItemStack(seeds[r.nextInt(seeds.length)],1));
+            sheep.getWorld().dropItemNaturally(sheep.getLocation(), stacks[r.nextInt(stacks.length)]);
         }
     }
 }
